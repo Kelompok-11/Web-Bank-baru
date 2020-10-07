@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/home2.css">
+    <link rel="stylesheet" type="text/css" href="css/transfer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -38,7 +38,7 @@
                         <a class="dropdown-item" href="profil.html">Profil</a>
                         <a class="dropdown-item" href="#">Informasi saldo</a>
                         <a class="dropdown-item" href="#">Mutasi</a>
-                        <a class="dropdown-item" href="transfer.html">Transfer</a>
+                        <a class="dropdown-item" href="#">Transfer</a>
                         <a class="dropdown-item" href="deposit.html">Deposit</a>
                         <a class="dropdown-item" href="home.html">Log out</a>
                     </div>
@@ -50,20 +50,29 @@
     <!--BACKGROUND HOME-->
     <section class="banner">
         <section class="banner2">
-          <p>SELAMAT DATANG FRIBLITZ</p>          
-          <p>1111 2222 3333 4444</p>
-        </section>
-        <section class="banner3">
-            <p>RIWAYAT TRANSAKSI</p>
-            <div class="riwayat">
-                <p><a href="">Sent to Radika</a></p>
-                <p>Rp 500.000</p>
-                <p><a href="">Recieved from Evan</a></p>
-                <p>Rp 1.000.000</p>
-                <p><a href="">Sent to Andre</a></p>
-                <p>Rp 100.000</p>
+            <div class="transfer">
+                <form>
+                    <h1>Transfer</h1> 
+                        <label for="bank">Bank yang dituju : </label> 
+                        <select id="bank">
+                            <p>Bank yang dituju : </p>
+                            <option value="bank">Pilih bank</option>
+                            <option value="BCA">Bank Central Asia(BCA)</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BNI">BNI</option>                   
+                        </select>
+                        <label for ="rekening"> Rekening yang dituju : </label>
+                        <input type="text" name="rekening" placeholder="rekening..">
+                        <label for ="jumlah transfer"> Jumlah transfer : </label>
+                        <input type="text" name="jumlah" placeholder="jumlah..">
+                        <label for ="Note"> Note : </label>
+                        <input type="text" name="note" placeholder="note..">
+                        <input type="submit" value="Transfer">
+                   
+                </form>
             </div>
         </section>
+        
   
       </section>
 

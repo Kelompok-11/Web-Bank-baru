@@ -13,7 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }  
 
 .banner::after{
@@ -47,8 +46,9 @@ section{
 }
 
 .sosmed{
+    height: 6vh;
     background-color: red;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
