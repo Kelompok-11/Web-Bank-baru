@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/Transfer.css">
+    <link rel="stylesheet" type="text/css" href="css/transfer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -15,7 +15,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-danger">
         <div class="container">
-            <a class="navbar-brand" href="#">E-Wallet</a>
+            <a class="navbar-brand" href="home2.html">E-Wallet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,20 +25,21 @@
                     <a class="nav-link" href="home2.html">Home </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Rekening
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="profil.html">Profil</a
-                        <a class="dropdown-item" href="#">Informasi saldo</a>
+                        <a class="dropdown-item" href="profil.html">Profil</a>
+                        <a class="dropdown-item" href="infosaldo.html">Informasi saldo</a>
                         <a class="dropdown-item" href="#">Mutasi</a>
-                        <a class="dropdown-item" href="Transfer.html">Transfer</a>
+                        <a class="dropdown-item" href="#">Transfer</a>
+                        <a class="dropdown-item" href="deposit.html">Deposit</a>
                         <a class="dropdown-item" href="home.html">Log out</a>
                     </div>
                     </li>
@@ -47,75 +48,35 @@
         </div>
       </nav>
     <!--BACKGROUND HOME-->
-      <section class="banner">
-            <section class="banner2">
-                <section class="banner3">
-                    <div id="display">
-                        <h1>Transfer</h1>
-                    
-                        <div class="currentInfo">
-                        <div class="current">
-                            Current balance
-                            <div class="currentAmount" id="currentBalance">
-                            Rp 0
-                            </div>
-                        </div>
-                        <div class="current">
-                            Overdraft
-                            <div class="currentAmount" id="currentOverdraft">
-                            Rp 0
-                            </div>
-                        </div>
-                        <div class="current">
-                            Overdraft Limit
-                            <div class="currentAmount" id="overdraftLimit">
-                            Rp 500
-                            </div>
-                        </div>
-                        </div>
-                    
-                        <div class="messageInfo">
-                        <p id="message">
-                        </p>
-                        </div>
-                    
-                        <div id="changeInfo">
-                        <div id="Transfer" class="change">
-                            <form id="formTransfer">
-                            <span class="leftColumn">
-                                Rp
-                                <input
-                                type="number"
-                                class="input"
-                                id="TransferAmt"
-                                name="Transfer"
-                                step="0.01"
-                                />
-                            </span>
-                            <span class="rightColumn">
-                                <input type="submit" class="bigButton" value="Transfer" />
-                            </span>
-                            </form>
-                        </div>
-                    
-                        <div id="changeOverdraftLimit" class="change">
-                            <form>
-                            <span class="leftColumn">
-                                Change Overdraft Limit:
-                            </span>
-                            <span class="rightColumn">
-                                <button type="button" class="smallButton" id="decrease">-</button>
-                                <button type="button" class="smallButton" id="increase">+</button>
-                            </span>
-                            </form>
-                        </div>
-                        </div>
-                        <script src="script.js" defer></script>
-                    </div>
-                </section>
-            </section>
+    <section class="banner">
+        <section class="banner2">
+            <div class="transfer">
+                <form>
+                    <h1>Transfer</h1> 
+                        <label for="bank">Bank yang dituju : </label> 
+                        <select id="bank">
+                            <p>Bank yang dituju : </p>
+                            <option value="bank">Pilih bank</option>
+                            <option value="BCA">Bank Central Asia(BCA)</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BNI">BNI</option>                   
+                        </select>
+                        <label for ="rekening"> Rekening yang dituju : </label>
+                        <input type="text" name="rekening" placeholder="rekening..">
+                        <label for ="jumlah transfer"> Jumlah transfer : </label>
+                        <input type="text" name="jumlah" placeholder="jumlah..">
+                        <label for ="Note"> Note : </label>
+                        <input type="text" name="note" placeholder="note..">
+                        <input type="submit" value="Transfer">
+                   
+                </form>
+            </div>
+        </section>
+        
+  
       </section>
 
+     
       
   <div class="sosmed">
     <ul>

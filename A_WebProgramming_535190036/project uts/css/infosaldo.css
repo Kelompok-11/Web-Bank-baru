@@ -11,9 +11,9 @@
     background-size: cover;
     position: relative;
     display: flex;
- 
     justify-content: center;
     align-items: center;
+    
 }  
 
 .banner::after{
@@ -31,15 +31,44 @@
     color: #fff;
     z-index: 1;
     padding: 20px 25px;
+    border: 3px solid #fff;
+    margin-left: -20vh;
+    margin-top: -60vh ;
     font-weight: bold;
     font-size: 150%;
+    border-radius: 50vh;
+}
+
+.banner3{
+    background-color: silver;
+    color: #fff;
+    z-index: 1;
+    height: 17vh;
+    width: 75vh;
+    border: 3px solid;
+    margin-top: 22vh;
+    margin-left: -50vh;
+    font-weight: bold;
+}  
+
+.riwayat{
+    color: #fff;
+}
+.riwayat :hover{
+    font-weight: bold;
+    color: red;
 }
 
 section{
     padding: 50px 0;
 }
 
-.transfer{
+.sosmed{
+    background-color: red;
+    font-size: 20px;
+}
+
+.infosaldo{
     max-width: 350px;
     margin: auto;
     border-radius: 3px;
@@ -59,13 +88,3 @@ input[type=text], select{
     border-radius: 4px;
     box-sizing: border-box;
 }
-
-
-.sosmed{
-    height: 6vh;
-    background-color: red;
-    font-size: 30px;
-}
-
-
-
