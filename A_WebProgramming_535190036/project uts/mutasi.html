@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/transfer.css">
+    <link rel="stylesheet" type="text/css" href="css/mutasi.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -50,27 +50,33 @@
     <!--BACKGROUND HOME-->
     <section class="banner">
         <section class="banner2">
+          <section class ="norek">
             <div class="transfer">
                 <form>
-                    <h1>Transfer</h1> 
-                        <label for="bank">Bank yang dituju : </label> 
-                        <select id="bank">
-                            <p>Bank yang dituju : </p>
-                            <option value="bank">Pilih bank</option>
-                            <option value="BCA">Bank Central Asia(BCA)</option>
-                            <option value="Mandiri">Mandiri</option>
-                            <option value="BNI">BNI</option>                   
+                    <h1>Mutasi</h1>
+                        <label for ="norek">No Rekening : </label>
+                        <output> 1234567890 </output> <br>
+                        <label for="transaksi">Jenis Transaksi : </label> 
+                        <select id="transaksi">
+                            <p>Jenis Transaksi : </p>
+                            <option value="transaksi">Semua</option>
+                            <option value="masuk">Uang Masuk</option>
+                            <option value="keluar">Uang Keluar</option>
+                            <option value="QRIN">Transfer QR In</option>   
+                            <option value="QROUT">Transfer QR Out</option>                 
                         </select>
-                        <label for ="rekening"> Rekening yang dituju : </label>
-                        <input type="text" name="rekening" placeholder="rekening..">
-                        <label for ="jumlah transfer"> Jumlah transfer : </label>
-                        <input type="text" name="jumlah" placeholder="jumlah..">
-                        <label for ="Note"> Note : </label>
-                        <input type="text" name="note" placeholder="note..">
-                        <input type="submit" value="Transfer">
+                        <label for ="mutasi">            Periode Mutasi : </label><br>
+                        
+                        <pre><label for ="dari tanggal"> Dari Tanggal: </label><label for ="sampai tanggal">                        Sampai Tanggal: </label></pre>
+                        
+                        <input type="date"  placeholder="dari tanggal..">
+                        
+                        <input type="date"  placeholder="note.."><br><br>
+                        <input type="submit" value="Send ">
                    
                 </form>
             </div>
+          </section>
         </section>
         
   
