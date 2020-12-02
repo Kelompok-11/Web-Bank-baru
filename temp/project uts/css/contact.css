@@ -1,0 +1,12 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:    sans-serif;
+}
+
+.sosmed{
+    
+    height: 6vh;
+    background-color: red;
+    font-size: 30px;
+}
