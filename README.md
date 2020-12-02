@@ -9,6 +9,7 @@ Andre - 535190029
 
 Link web kita >>>
 https://kelompok-11.github.io/Web-Bank-baru.github.io/temp/project%20uts/home.html
+https://kelompok-11.github.io/Web-Bank-baru.github.io/index.html
 <<< Link web kita
 
 user: 1, 2, 3, 4
