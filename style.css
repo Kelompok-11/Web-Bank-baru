@@ -6,7 +6,7 @@
 .banner{
 	height: 100vh;
 	width: auto;
-	background-image: url('img/Clouds_over_the_Atlantic_Ocean.jpg');
+	background-image: url('img/backg.jpg');
 	background-size: cover;
 	position: relative;
 	display: flex;
@@ -194,7 +194,8 @@
 	display: inline-block;
     width: 100%;
     height: 150px;
-    background-image: url('https://image.ibb.co/bVnMrc/g3095.png'), linear-gradient(10deg, rgb(129, 129, 129) 0%, rgb(92, 92, 92) 100%);
+	background-image: url('img/card.png'), linear-gradient(10deg, rgb(129, 129, 129) 0%, rgb(92, 92, 92) 100%);
+	background-size: cover;
     background-repeat: no-repeat;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
