@@ -1,13 +1,13 @@
 var id, password, infoname, balance, typemoney, joindate, country  = new Array();
 var account = new Array();
-var rank = new Array("Gold","Silver","Copper","Platinum");
-id= [1, 2, 3, 4];
-password= [11,22,33,44];
-infoname = ["Ferdy","Radika","Haris","Andre"];
-balance = [0,0,0,0];
-typemoney =["IDR","IDR","IDR","IDR"];
-joindate = ["12/03/2019","10/02/2018","22/03/2019","10/02/2018"];
-country = ["Indonesia", "Indonesia", "Indonesia","Indonesia"]
+var rank = new Array("Fribidium","Ruby","Sapphire","Platinum","Diamond");
+id= [1, 2, 3, 4, 5];
+password= [11,22,33,44,55];
+infoname = ["Ferdy","Radika","Haris","Andre", "Evan"];
+balance = [0,0,0,0,0];
+typemoney =["IDR","IDR","IDR","IDR","IDR"];
+joindate = ["12/03/2019","10/02/2018","22/03/2019","10/02/2018","11/11/2018"];
+country = ["Indonesia", "Indonesia", "Indonesia","Indonesia","Indonesia"]
 for (i = 0; i < id.length; i++){
 	account[i] = parseInt(balance[i]);
 }
