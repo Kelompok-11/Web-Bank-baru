@@ -3,7 +3,7 @@ var account = new Array();
 var rank = new Array("Fribidium","Ruby","Sapphire","Platinum","Diamond");
 id= [1, 2, 3, 4, 5];
 password= [11,22,33,44,55];
-infoname = ["Ferdy","Radika","Haris","Andre", "Evan"];
+infoname = ["Ferdy","Radika","Haris","Andre","Evan"];
 balance = [0,0,0,0,0];
 typemoney =["IDR","IDR","IDR","IDR","IDR"];
 joindate = ["12/03/2019","10/02/2018","22/03/2019","10/02/2018","11/11/2018"];
@@ -113,14 +113,16 @@ function Transfers(){
 	var input = document.getElementById("accountnumber").value;
 	var k=0;
 	for (i = 0; i < id.length; i++){		
-		if ((input == id[i] && inputmoney>0 && account[success]-inputmoney>0)){
+		if ((input == id[i] && inputmoney > 0 && account[success]-inputmoney > 0)){
 			k=1;
 			account[success] -= inputmoney;
-			prbalance=account[success];
+			prbalance = account[success];
 			account[i] += inputmoney;
 			document.getElementById("errortick").style.display = 'none';
 			document.getElementById("balance").innerHTML = prbalance;
-			document.getElementById("notification") .innerHTML= "You have send Rp. "+inputmoney+" to "+id[i];
+			document.getElementById("notick").style.display = 'block';
+			document.getElementById("notification") .innerHTML= "You have send Rp. "+inputmoney+" to "+infoname[i];
+			break;
 		}
 		else {
 			document.getElementById("errortick").style.display = 'block';
