@@ -105,10 +105,12 @@ function Logout() {
 	document.getElementById("loginaccount").style.display = 'block';
 	document.getElementById("formlogin").reset();
 	document.getElementById("manageaccount").style.display = 'none';
-			document.getElementById("content").style.display = 'none';
-			document.getElementById("content2").style.display = 'none';
-			document.getElementById("content3").style.display = 'none';
+	document.getElementById("content").style.display = 'none';
+	document.getElementById("content2").style.display = 'none';
+	document.getElementById("content3").style.display = 'none';
 }
+
+
 function Transfers(){
 	document.getElementById("changepass").style.display = 'none';
 	document.getElementById("changeimg").style.display = 'none';
@@ -146,20 +148,23 @@ function Change() {
 	document.getElementById("notick").style.display = 'none';
 	document.getElementById("errortick").style.display = 'none';
 }
+
+
 function Changepassword(){
 	if (document.getElementById("passcurrent").value == password[success] && document.getElementById("passnew").value == document.getElementById("passnewrepeat").value) {
 		password[success] = document.getElementById("passnew").value;
 		document.getElementById("changepass").style.display = 'none';
-	document.getElementById("changeimg").style.display = 'none';
-	document.getElementById("no").style.display = 'block';
-	document.getElementById("notick").style.display = 'block';
-	document.getElementById("notification") .innerHTML= "Your password has been changed";
-	} else {
+		document.getElementById("changeimg").style.display = 'none';
+		document.getElementById("no").style.display = 'block';
+		document.getElementById("notick").style.display = 'block';
+		document.getElementById("notification") .innerHTML= "Your password has been changed";
+	} 
+	else {
 		document.getElementById("changepass").style.display = 'none';
-	document.getElementById("changeimg").style.display = 'none';
-	document.getElementById("no").style.display = 'block';
-	document.getElementById("notick").style.display = 'none';
-	document.getElementById("errortick").style.display = 'block';
+		document.getElementById("changeimg").style.display = 'none';
+		document.getElementById("no").style.display = 'block';
+		document.getElementById("notick").style.display = 'none';
+		document.getElementById("errortick").style.display = 'block';
 		document.getElementById("notification") .innerHTML= "Invalid Password";
 	}
 }
