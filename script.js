@@ -120,7 +120,7 @@ function Transfers(){
 			account[i] += inputmoney;
 			document.getElementById("errortick").style.display = 'none';
 			document.getElementById("balance").innerHTML = prbalance;
-			document.getElementById("notification") .innerHTML= "You have send Rp. "+inputmoney+"in account "+id[i];
+			document.getElementById("notification") .innerHTML= "You have send Rp. "+inputmoney+" to "+id[i];
 		}
 		else {
 			document.getElementById("errortick").style.display = 'block';
