@@ -143,7 +143,24 @@
 					<p style="float: right;font-weight: bold;font-size: 2.5rem;" class="text-primary"  id="balance"></p>
 				</div>		
 				<div class="buttondetail mt-3" style="width: 84%;margin: 0 auto;">
-					<div class="btn btn-primary" style="width: 100%" onclick="Detail()">Detail Infomation</div>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="Detail()">Detail Infomation</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Transaction History</h4>
+								</div>
+								<div class="modal-body">
+									<p>Transaction here (maximum 5 shown).</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -228,21 +245,6 @@
 	</div>
 </div>
 
-
-<!-- <script type="text/javascript">
-	document.getElementById("kq").innerHTML='Rp. 0';
-		function getInfo(){
-			var value = 2;
-			var balance = document.getElementById("balance").value;
-				balance = parseInt(balance);
-			if (balance) {
-				value = value+balance;
-				info = "Rp. "+value;
-				document.getElementById("kq").innerHTML=info;
-				document.getElementById("stt").innerHTML="You have successfully deposited the amount Rp."+balance+ "into your account. "+info;
-			}
-		}
-	</script> -->
 <div class="modal fade bd-example-modal-sm mt-5" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" >
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content" style="border-bottom: 0.5rem solid green !important;">

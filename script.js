@@ -61,7 +61,7 @@ function Deposit() {
     account[success] += input;
     prbalance=account[success];
     document.getElementById("balance").innerHTML =prbalance;  
-    document.getElementById("notification") .innerHTML= "You have add Rp."+input+" on your balance";
+    document.getElementById("notification") .innerHTML= "You have add Rp."+input+" to your account";
     }
 }
 
@@ -158,8 +158,8 @@ function Changepassword(){
 }
 
 function Detail(){
-	document.getElementById("changepass").style.display = 'block';
-	document.getElementById("changeimg").style.display = 'block';
+
+	
 }
 
 
