@@ -6,7 +6,7 @@ password= [11,22,33,44,55];
 infoname = ["Ferdy","Radika","Haris","Andre","Evan"];
 balance = [0,0,0,0,0];
 typemoney =["IDR","IDR","IDR","IDR","IDR"];
-joindate = ["12/03/2019","10/02/2018","22/03/2019","10/02/2018","11/11/2018"];
+joindate = ["06/03/2019","10/02/2018","16/03/2019","10/02/2018","11/11/2018"];
 country = ["Indonesia", "Indonesia", "Indonesia","Indonesia","Indonesia"]
 for (i = 0; i < id.length; i++){
 	account[i] = parseInt(balance[i]);
@@ -158,7 +158,8 @@ function Changepassword(){
 }
 
 function Detail(){
-	
+	document.getElementById("changepass").style.display = 'block';
+	document.getElementById("changeimg").style.display = 'block';
 }
 
 
