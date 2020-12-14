@@ -8,7 +8,7 @@ Radika - 535190028
 Andre - 535190029
 
 Link web kita v2>>>
-https://kelompok-11.github.io/Web-Bank-baru.github.io/index.html
+https://kelompok-11.github.io/Web-Bank-baru.github.io/public/index.html
 <<< Link web kita v2
 
 user: 1, 2, 3, 4, 5
